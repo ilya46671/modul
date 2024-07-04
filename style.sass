@@ -1,4 +1,5 @@
 $color_icons: #1EACC7
+$second_color: #FF5656
 =btn_hover
 	&:hover
 		background-image: none
@@ -281,8 +282,47 @@ nav
 		
 .require
 	padding: 68px 0 84px 0
+	&_block
+		margin: 33px 0
+		&_nmb
+			margin-bottom: 0px
+	&_title
+		color: #1CA8C3
+		font-size: 22px
+		font-weight: 400
+		line-height: 24px
+	&_list
+		list-style-type: none
+		margin-top: 20px
+		li
+			position: relative
+			color: #222
+			font-size: 17px
+			font-style: normal
+			font-weight: 300
+			line-height: 24px
+			margin-bottom: 10px
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				left: -32px
+				top: 3px
+				width: 21px
+				height: 20px
+				background: url('../img/icons/check_blue.png') center (center / cover) no-repeat
+	&_descr			
+		color: #1CA8C3
+		font-size: 17px
+		font-style: normal
+		font-weight: 300
+		line-height: 24px
+	.warning
+		.require_title
+			color: $second_color
+		.require_list
+			li
+				&:before
+					background: url('../img/icons/check_red.png') center (center / cover) no-repeat
 
-
-
-
-			
+						
